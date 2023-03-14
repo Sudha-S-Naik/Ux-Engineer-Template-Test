@@ -1,0 +1,7 @@
+<svg id="Group_830" data-name="Group 830" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Ellipse_154" data-name="Ellipse 154" fill="#1b263b" stroke="#1b263b" stroke-width="1">
+    <circle cx="15" cy="15" r="15" stroke="none"/>
+    <circle cx="15" cy="15" r="14.5" fill="none"/>
+  </g>
+  <path id="Icon_awesome-angle-double-right" data-name="Icon awesome-angle-double-right" d="M5.829,10.384l2.794,2.794a.491.491,0,0,0,.7,0l.464-.464a.491.491,0,0,0,0-.7L7.8,10.036l1.98-1.98a.491.491,0,0,0,0-.7l-.462-.468a.491.491,0,0,0-.7,0L5.831,9.685a.492.492,0,0,0,0,.7Zm-3.944-.7L4.679,6.891a.491.491,0,0,1,.7,0l.464.464a.491.491,0,0,1,0,.7l-1.98,1.98,1.98,1.98a.491.491,0,0,1,0,.7l-.464.464a.491.491,0,0,1-.7,0L1.885,10.379a.489.489,0,0,1,0-.694Z" transform="translate(9.071 5.254)" fill="#fff"/>
+</svg>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create page responsive using tailwindcss</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="img/favicon.ico"/>
+</head>
+<body>
+    <header class="sticky top-0 w-full z-10">
+        <div class="bg-[#0D1B2A] sm:h-[72px] h-14 flex items-center justify-between lg:px-10 sm:px-8 px-3.5 z-10">
+            <div class="xl:max-w-container xl:mx-auto w-full">
+                <div class="flex items-center justify-between w-full">
+                    <ul class="flex items-center">
+                        <!-- 640px above show name below that show only MyTyles logo -->
+                        <li class="lg:hidden block mr-4">
+                            <button type="button" class="inline-block leading-tight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <img src="img/Icon-feather-menu.svg" loading="lazy" decoding="async" alt="logo-icon">
+                            </button>
+                        </li> 
+                        <li class="sm:block hidden">
+                            <img src="img/Logo.svg" loading="lazy" decoding="async" alt="logo-icon">
+                        </li>
+                        <li class="sm:hidden block">
+                            <img src="img/MyTyles-logo.svg" loading="lazy" decoding="async" alt="logo-icon">
+                        </li>
+                        <li class="text-sm font-normal text-[#F7F6F5] ml-14 lg:block hidden">
+                            <a href="#">Inspiration Gallery</a>
+                        </li>
+                        <li class="text-sm font-normal text-[#F7F6F5] ml-7 lg:block hidden">
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="flex items-center">
+                        <li class="relative sm:block hidden">
+                            <span class="relative">
+                                <input type="text" class="md:w-[350px] w-[218px] md:h-[42px] h-[32px] pl-5 pr-[88px] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal rounded-lg bg-[#F7F6F5] outline-0" placeholder="Search">
+                                <label for=""></label>
+                            </span>
+                            <img src="img/photo.png" alt="search-by-img" class="cursor-pointer absolute md:w-auto w-[12px] h-auto  md:top-3.5 top-[11px]  right-[62px]" loading="lazy" decoding="async">
+                            <img src="img/Voice.png" alt="search-by-voice" class="cursor-pointer absolute md:w-auto w-[12px] h-auto  md:top-3.5 top-[11px]  right-[38px]" loading="lazy" decoding="async">
+                            <img src="img/search.png" alt="search-icon" class="cursor-pointer absolute md:w-auto w-3 h-auto  md:top-3.5 top-[11px]  right-2.5" loading="lazy" decoding="async">
+                        </li>
+                        <li class="sm:hidden block">
+                            <button type="button" class="inline-block leading-tight" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <img src="img/Path 2642.svg" alt="search-icon" loading="lazy" decoding="async">
+                            </button>
+                        </li>
+                        <li class="block">
+                            <ul class="flex items-center">
+                                <li>
+                                    <button type="button" class="sm:text-sm text-xs font-normal text-[#F7F6F5] lg:ml-[36px] md:6 ml-5">
+                                        Sign In
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="bg-[#F7941D] hover:bg-[#EA860E] rounded-lg sm:text-xs3 text-xs font-normal sm:py-2 py-1 sm:px-4 px-3 text-[#F7F6F5] ml-[18px] signup-btn">
+                                        Sign Up
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- apply responsive for search bar -->
+        <div class="collapse" id="collapseExample">
+            <div class="block p-5 shadow-lg bg-[#0D1B2A]">
+                <ul>
+                    <li class="relative">
+                        <span class="relative">
+                            <input type="text" class="w-full sm:h-[42px] h-[32px] pl-5 pr-[88px] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal rounded-lg bg-[#F7F6F5] outline-0 text-sm font-[#0000000]" placeholder="Search">
+                            <label for=""></label>
+                        </span>
+                        <img src="img/photo.png" alt="search-by-img" class="cursor-pointer absolute sm:w-auto w-[12px] h-auto  sm:top-3.5 top-[11px]  right-[62px]" loading="lazy" decoding="async">
+                        <img src="img/Voice.png" alt="search-by-voice" class="cursor-pointer absolute sm:w-auto w-[12px] h-auto  sm:top-3.5 top-[11px]  right-[38px]" loading="lazy" decoding="async">
+                        <img src="img/search.png" alt="search-icon" class="cursor-pointer absolute sm:w-auto w-3 h-auto  sm:top-3.5 top-[11px]  right-2.5" loading="lazy" decoding="async">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide relative h-full flex  items-center" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner relative w-full overflow-visible">
+            <div class="carousel-item active relative float-left w-full">
+                <ul class="flex justify-center p-2 items-center overflow-auto bg-black">
+                    <li class="cursor-pointer min-w-[80px] mr-7  text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/bathrrom.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Bathroom</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-Kitchen.png"  class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Kitchen</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-living-room.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Living room & Hall</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Grou-bedrrom.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Bedroom</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px]  mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-parking.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Parking</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D]">
+                        <img src="img/Group-balcony.png" class="ml-5 hover:text-[#F7941D]" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Balcony</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D]"> 
+                        <img src="img/Group-pooja.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Pooja Room</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-tvunit.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">TV Unit</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-foyer.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Foyer</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-passage.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Sitout & Passage area</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-BarArea.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Bar Area</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="carousel-item  relative float-left w-full">
+                <ul class="flex justify-center p-2 items-center overflow-auto bg-black">
+                    <li class="cursor-pointer min-w-[80px] mr-7  text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-BarArea.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Utility</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-BarArea.png"  class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Elevation</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-BarArea.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Garden Area</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-foyer.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Accessoriesr</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px]  mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-Kitchen.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Other</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px] mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] ">
+                        <img src="img/Group-foyer.png" class="ml-5" alt="kitchen-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Accessoriesr</span>
+                    </li>
+                    <li class="cursor-pointer min-w-[80px]  mr-7 text-xs font-semibold text-[#F7F6F5] text-center hover:text-[#F7941D] "> 
+                        <img src="img/Group-Kitchen.png" class="ml-5" alt="bathrrom-img" loading="lazy" decoding="async" class="block">
+                        <span class="pt-[3px]">Other</span>
+                    </li>
+                </ul>
+            </div>      
+        </div>
+        <button class="carousel-control-prev absolute top-0 bottom-0 w-5 bg-[#1B263B] flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+            <span class="inline-block bg-no-repeat" aria-hidden="true">
+                <img src="img/carousel-previous.svg" alt="prv-page" loading="lazy" decoding="async">
+            </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next absolute top-0 bottom-0 right-0 w-5 bg-[#1B263B] flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
+            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
+            <span class="inline-block bg-no-repeat" aria-hidden="true">
+                <img src="img/Iconawesome-angle-double-right@2x.png" alt="nxt-page" loading="lazy" decoding="async">
+            </span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>   
+    <div class="lg:px-10 sm:px-8 px-3.5">
+        <div class="xl:max-w-container mx-auto">
+            <div class="flex lg:flex-row flex-col mt-[22px] mb-5 lg:-mx-7">
+                <div class="lg:w-1/2 w-full self-center lg:px-7">
+                    <img src="img/Group-login.png" alt="img" class="lg:mx-0 mx-auto lg:w-full w-[224px] sm:w-[400px]">
+                </div>
+                <!-- sign-up form  -->
+                <div class="lg:w-1/2 w-full lg:mt-0 mt-5  lg:px-7">
+                    <div class="bg-[#FFFFFF] lg:shadow-s1 lg:rounded-lg pt-[18px] sm:px-8 pb-4">
+                        <h4 class="sm:text-xl5 text-2xl font-bold  text-[#000103]">Sign up</h4>
+                        <p class="sm:text-base text-sm font-normal text-[#66728A] pt-2">Sign up to start shopping on MyTyles</p>
+                        <div class="mt-2.5">
+                            <div class="flex  sm:flex-row flex-col -mx-3 mt-1.5">
+                                <div class="sm:w-1/2 w-full px-3">
+                                    <div class="shadow-s2 rounded-lg">
+                                        <input type="text" class="mandatory-filde-border mandatory-firstName-border firstName border-white rounded-lg px-4 sm:h-12 h-10 w-full bg-[#FFFFFF] outline-0 focus:outline-0 sm:text-xs4 text-sm font-normal text-[#000103] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal" placeholder="Enter First Name *">
+                                    </div>
+                                </div>
+                                <div class="sm:w-1/2 w-full px-3 sm:mt-0 mt-3">
+                                    <div class="shadow-s2 rounded-lg">
+                                        <input type="text" class="mandatory-filde-border mandatory-lastName-border lastName border-white rounded-lg px-4 sm:h-12 h-10 w-full bg-[#FFFFFF] outline-0 focus:outline-0 sm:text-xs4 text-sm font-normal text-[#000103] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal" placeholder="Enter Last Name *">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mt-3">
+                            <div class="shadow-s2 rounded-lg">
+                                <input type="text" class="px-4 sm:h-12 h-10 w-full bg-[#FFFFFF] outline-0 border-white rounded-lg focus:outline-0 sm:text-xs4 text-sm font-normal text-[#000103] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal" placeholder="Enter Email Address (optional)">
+                            </div>
+                        </div>
+                        <div class="w-full mt-3">
+                            <div class="shadow-s2 rounded-lg">
+                                <input type="text" class="mandatory-filde-border mandatory-phone-field-border px-4 sm:h-12 h-10 w-full bg-[#FFFFFF] outline-0 border-white rounded-lg focus:outline-0 sm:text-xs4 text-sm font-normal text-[#000103] sm:placeholder:text-xs1 placeholder:text-sm placeholder:text-[#9D9D9D] placeholder:font-normal phone-number-err" placeholder="Enter Mobile Number *">
+                            </div>
+                        </div>
+                        <div class="sm:ml-3 ml-0">
+                            <div class="relative checkbox custom-checkbox cursor-pointer flex items-center mt-[15px]">
+                                <input type="checkbox" id="checkbox-1">
+                                <label class="cursor-pointer sm:text-sm text-xs3 font-light text-[#000000] pl-2 all-are-mandatory" for="checkbox-1">I consent to Data Sharing with MyTyles for <a href="#" class="text-sm font-normal text-[#66728A] underline">Marketing Purposes</a></label>
+                            </div>
+                        </div>
+                        <button type="button" class="sm:h-[46px] h-9 text-sm font-medium text-[#FFFFFF] mt-5 w-full bg-[#F7941D] rounded-lg sign-Up">
+                            Sign Up
+                        </button>
+                        <p class="text-xs3 font-light text-[#000000] text-center mt-4">
+                            By clicking on "Sign Up" you agree to our <a href="#" class="text-xs3 font-normal text-[#66728A] underline">Terms and <br> Conditions</a>
+                        </p>
+                        <p class="pt-5 sm:text-base text-sm font-normal text-[#9D9D9D] text-center">Or continue with</p>
+                        <div class="flex items-center justify-center mt-2">
+                            <img src="img/facebook.png" decoding="aysnc" loading="lazy" alt="facebook-logo" class="cursor-pointer">
+                            <img src="img/google.png" decoding="aysnc" loading="lazy" alt="google-logo" class="pl-8 cursor-pointer">
+                        </div>
+                        <p class="sm:text-base text-sm font-normal text-[#0D1B2A] mt-5 text-center cursor-pointer">Already have an account? <span class="font-medium text-[#F7941D] sign-in-here">Sign In here</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/custom-file.js"></script>
+    <script src="js/lib/tw-elements/dist/js/index.min.js"></script>
+    <script src="js/lib/flowbite/dist/flowbite.js"></script>
+</body>
+</html>

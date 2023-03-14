@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "ExtraBold";
+    src: url("/public/Fonts/static/Outfit-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Black";
+    src: url("/public/Fonts/static/Outfit-Black.ttf");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("/public/Fonts/static/Outfit-Bold.ttf");
+}
+@font-face {
+    font-family: "ExtraBold";
+    src: url("/public/Fonts/static/Outfit-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Light";
+    src: url("/public/Fonts/static/Outfit-Light.ttf");
+}
+@font-face {
+    font-family: "Medium";
+    src: url("/public/Fonts/static/Outfit-Medium.ttf");
+}
+@font-face {
+    font-family: "Regular";
+    src: url("/public/Fonts/static/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: "SemiBold";
+    src: url("/public/Fonts/static/Outfit-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Thin";
+    src: url("/public/Fonts/static/Outfit-Thin.ttf");
+}

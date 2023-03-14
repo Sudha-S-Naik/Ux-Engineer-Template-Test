@@ -1,0 +1,35 @@
+{
+  "name": "site2gym-html-templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i input.css -o ./public/output.css --watch",
+    "prod": "npx tailwindcss -i input.css -o ./public/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aishwarya-7edge@bitbucket.org/7EDGE/site2gym-html-templates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/7EDGE/site2gym-html-templates/issues"
+  },
+  "homepage": "https://bitbucket.org/7EDGE/site2gym-html-templates#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-google": "^0.14.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.1",
+    "eslint-plugin-html": "^6.2.0",
+    "flowbite": "^1.3.3",
+    "stylint": "^2.0.0",
+    "tw-elements": "^1.0.0-alpha12"
+  },
+  "description": ""
+}

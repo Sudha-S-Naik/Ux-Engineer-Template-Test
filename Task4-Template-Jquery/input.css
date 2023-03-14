@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Cabin-Regular";
+    src: url("/public/fonts/Cabin-Regular.ttf");
+}
+@font-face {
+  font-family: "Cabin-Medium";
+  src: url("/public/fonts/Cabin-Medium.ttf");
+}
+@font-face {
+  font-family: "Cabin-Bold";
+  src: url("/public/fonts/Cabin-Bold.ttf");
+}
+@font-face {
+  font-family: "Cabin-SemiBold";
+  src: url("/public/fonts/Cabin-SemiBold.ttf");
+}
+
+body{
+    font-family: 'Cabin-Regular', sans-serif;
+}
+label.error.fail-alert {
+  color: red;
+  line-height: 1;
+  margin-top: 20px;
+  padding: 2px 0 6px 6px;
+}
+
+input.valid.success-alert {
+  border: 2px solid #4CAF50;
+  color: green;
+}
+
+input.error.fail-alert {
+  border: 2px solid red;
+  color: red;
+}
